@@ -24,5 +24,12 @@ namespace DouJob
         {
             InitializeComponent();
         }
+
+        private void Go_Click(object sender, RoutedEventArgs e)
+        {
+            string grabbResult;
+            DouGrabber.Run(out grabbResult);
+            MainTextField.AppendText(grabbResult);
+        }
     }
 }

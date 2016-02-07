@@ -1,8 +1,15 @@
-﻿<Window x:Class="DouJob.MainWindow"
+﻿<Window x:Name="MainDouJob" x:Class="DouJob.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Dou Jobs" Height="361.197" Width="254.851" HorizontalAlignment="Center" Top="0" ShowInTaskbar="False">
     <Grid>
-        
+        <RichTextBox Name="MainTextField" HorizontalAlignment="Left" Height="211" Margin="12,10,-229,0" VerticalAlignment="Top" Width="217">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="Go" Content="Go!" HorizontalAlignment="Left" Height="50"  VerticalAlignment="Top" Width="100" Margin="70,256,-170,-83" Click="Go_Click" RenderTransformOrigin="0.519,0.862"/>
     </Grid>
 </Window>
